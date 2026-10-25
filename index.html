@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genuine Effect — macOS Animations for Linux GTK Apps</title>
+    <style>
+        :root {
+            --bg-color: #f5f5f7;
+            --text-color: #1d1d1f;
+            --accent-color: #0071e3;
+            --card-bg: #ffffff;
+            --border-radius: 12px;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.5;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            letter-spacing: -0.05rem;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 1.25rem;
+            color: #86868b;
+            margin-bottom: 20px;
+        }
+        .cta-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            font-size: 1rem;
+            font-weight: 500;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+        .btn-primary {
+            background-color: var(--accent-color);
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: #0077ed;
+        }
+        .btn-secondary {
+            background-color: #e8e8ed;
+            color: var(--text-color);
+        }
+        .btn-secondary:hover {
+            background-color: #d2d2d7;
+        }
+        .card {
+            background-color: var(--card-bg);
+            border-radius: var(--border-radius);
+            padding: 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+        }
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            letter-spacing: -0.02rem;
+        }
+        ul {
+            list-index-type: none;
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        code {
+            font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+            background-color: #f5f5f7;
+            padding: 3px 6px;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+        pre {
+            background-color: #1d1d1f;
+            color: #f5f5f7;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin-top: 10px;
+            font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+        }
+        pre code {
+            background-color: transparent;
+            color: inherit;
+            padding: 0;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #86868b;
+            font-size: 0.875rem;
+        }
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🧞 Genuine</h1>
+            <p class="subtitle">Bring macOS-style window animations exclusively to native Linux GTK applications.</p>
+            <div class="cta-buttons">
+                <a href="https://github.com/PoscaDevLabs/Geniune-Effect/releases/download/v1.0.0/genuine-effect_1.0.0_all.deb" class="btn btn-primary">Download .DEB Installer</a>
+                <a href="https://github.com/PoscaDevLabs/Geniune-Effect" class="btn btn-secondary">View on GitHub</a>
+            </div>
+        </header>
+
+        <section class="card">
+            <h2>Core Features</h2>
+            <ul>
+                <li><strong>GTK-Only Isolation:</strong> Hooks directly into native GTK3/GTK4 apps like Nautilus and Gedit, completely ignoring browsers, Electron apps, or native ChromeOS decorations.</li>
+                <li><strong>Genie Mode:</strong> Asymmetric curved suction physics morphing windows smoothly downward into your panel interface.</li>
+                <li><strong>Scale Mode:</strong> Clean center-focused structural reduction transitions.</li>
+                <li><strong>Dynamic Toggle:</strong> Hot-swap states instantly from any shell instance via the <code>Genuine-Size</code> CLI utility.</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Quick Installation</h2>
+            <p>Deploy the native standalone installer straight from your terminal terminal:</p>
+            <pre><code>sudo apt update
+sudo apt install ./genuine-effect_1.0.0_all.deb
+gnome-extensions enable genuine@pittriverbia2.github.io</code></pre>
+        </section>
+
+        <section class="card">
+            <h2>Command Usage</h2>
+            <p>Run the global wrapper path binary to alter your application layout animation profiles on the fly:</p>
+            <pre><code># Toggles your system layout cleanly between 'genie' and 'scale' states
+Genuine-Size</code></pre>
+        </section>
+
+        <footer>
+            <p>Maintained by <a href="https://github.com/PoscaDevLabs">PoscaDevLabs</a>. Distributed under the MIT License.</p>
+        </footer>
+    </div>
+</body>
+</html>
