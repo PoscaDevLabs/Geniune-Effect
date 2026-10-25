@@ -28,7 +28,7 @@ Optimized for native Debian/Ubuntu systems, and structured to work correctly wit
 Run the following commands inside your terminal environment:
 
 ```bash
-git clone https://github.com
+git clone https://github.com/PoscaDevLabs/Genuine-Effect
 cd genuine
 chmod +x install.sh
 ./install.sh
