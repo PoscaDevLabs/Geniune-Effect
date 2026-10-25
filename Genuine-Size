@@ -1,0 +1,12 @@
+#!/bin/bash
+# Copyright (c) 2026 pittriverbia2. All rights reserved.
+MODE_FILE="$HOME/.config/genuine_mode.txt"
+if [ -f "$MODE_FILE" ] && [ "$(cat "$MODE_FILE")" == "genie" ]; then
+    echo "scale" > "$MODE_FILE"
+    echo "✨ Genuine: GTK Apps set to [ SCALE ] effect."
+else
+    echo "genie" > "$MODE_FILE"
+    echo "🧞 Genuine: GTK Apps set to [ GENIE ] effect."
+fi
+gnome-extensions disable genuine@pittriverbia2.github.io 2>/dev/null
+gnome-extensions enable genuine@pittriverbia2.github.io 2>/dev/null

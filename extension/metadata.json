@@ -1,0 +1,6 @@
+{
+  "uuid": "genuine@pittriverbia2.github.io",
+  "name": "Genuine",
+  "description": "Adds a macOS Genie or Scale effect to Linux applications.",
+  "shell-version": [ "45", "46", "47" ]
+}
